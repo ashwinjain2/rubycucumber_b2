@@ -20,11 +20,11 @@ Feature: Login Paypal
     And I click the settings icon
     And I click the Add address plus icon
     And I select the New Jersey state from the dropdown list
-  And I make the address primary by selecting the checkbox
+    And I make the address primary by selecting the checkbox
 
     Examples:
-      | username               | password |
-      | xfnemailtest@gmail.com | PickCart7  |
+      | username               | password  |
+      | xfnemailtest@gmail.com | PickCart7 |
 
   Scenario Outline: Login to paypal website wrong password
     Given I am on paypal website
@@ -34,7 +34,7 @@ Feature: Login Paypal
     And I click the upgrade to business account link
     And I select the existing account radio button
     Examples:
-      | username               | password |
-      | xfnemailtest@gmail.com | PickCart7  |
+      | username               | password  |
+      | xfnemailtest@gmail.com | July@2019 |
 
 
