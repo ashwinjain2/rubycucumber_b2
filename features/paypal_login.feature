@@ -35,6 +35,6 @@ Feature: Login Paypal
     And I select the existing account radio button
     Examples:
       | username               | password |
-      | xfnemailtest@gmail.com | PickCart7  |
+      | xfnemailtest@gmail.com | Sept@2019  |
 
 
