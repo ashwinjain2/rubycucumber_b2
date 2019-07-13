@@ -1,0 +1,19 @@
+Feature: Login Paypal
+
+  # | user2                | pass2    |
+  Scenario Outline: Login to paypal website wrong password   # features/paypal_login.feature:16
+    Given I am on paypal website                             # features/paypal_login.feature:17
+    When I enter <username> and <password>                   # features/paypal_login.feature:18
+    And I click the Login button                             # features/paypal_login.feature:19
+    And I click the settings icon                            # features/paypal_login.feature:20
+    And I click the Add address plus icon                    # features/paypal_login.feature:21
+    And I select the New Jersey state from the dropdown list # features/paypal_login.feature:22
+    And I make the address primary by selecting the checkbox # features/paypal_login.feature:23
+
+    Examples: 
+      | username               | password  |
+      | xfnemailtest@gmail.com | PickCart7 |
+
+1 scenario (1 passed)
+7 steps (7 passed)
+1m5.249s
